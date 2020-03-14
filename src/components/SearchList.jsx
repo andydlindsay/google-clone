@@ -6,7 +6,7 @@ const SearchList = (props) => {
   return (
     <ul className="search-list">
       { props.data.map(d => (
-        <SearchListItem datum={ d } />
+        <SearchListItem datum={ d } key={ d.id } />
       )) }
     </ul>
   );
