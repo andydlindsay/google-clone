@@ -16,8 +16,8 @@ function App(props) {
   return (
     <div className="App">
       <h1>{ msg }</h1>
-      <h2>Found { searchResults.length } results!</h2>
       <SearchBar handleSubmit={ handleSubmit } />
+      <h2>Found { searchResults.length } results!</h2>
       <SearchList data={ searchResults } />
     </div>
   );
