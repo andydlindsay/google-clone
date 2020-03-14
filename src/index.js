@@ -6,7 +6,9 @@ import './index.css'
 const Main = () => {
   return (
     <div className="App">
-      <App />
+      <App title="Google Clone">
+        {/* { children go here } */}
+      </App>
     </div>
   );
 }

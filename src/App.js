@@ -6,6 +6,7 @@ function App(props) {
   return (
     <div className="App">
       <h1>{ msg }</h1>
+      { props.children }
     </div>
   );
 }
