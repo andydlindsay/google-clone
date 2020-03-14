@@ -8,7 +8,7 @@ function App(props) {
   const [searchResults, setSearchResults] = useState(data);
 
   const handleSubmit = (val) => {
-    const filtered = data.filter(d => d.content.includes(val))
+    const filtered = data.filter(d => d.content.includes(val.trim()))
     setSearchResults(filtered);
   };
 

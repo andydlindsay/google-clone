@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import App from './App';
+import './index.css';
 
 storiesOf('App Component', module)
   .add('basic rendering', () => (
