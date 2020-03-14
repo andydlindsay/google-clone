@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const SearchBar = (props) => {
+  const [searchTerm, setSearchTerm] = useState('');
+
   return (
-    <form onSubmit={ props.handleSubmit }>
+    <form onSubmit={ e => {
+      e.preventDefault();
+      props.handleSubmit(searchTerm);
+    }}>
       <label htmlFor="search-term">Search:</label>
-      <input type="text" id="search-term" />
+      <input
+        type="text"
+        id="search-term"
+        value={searchTerm}
+        onChange={ e => setSearchTerm(e.target.value) }
+      />
     </form>
   );
 };
