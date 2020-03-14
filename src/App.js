@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+function App(props) {
+  const msg = props.title || 'Hello World';
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <h1>{ msg }</h1>
     </div>
   );
 }
